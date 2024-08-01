@@ -18,6 +18,6 @@ public class PeoplesService {
     }
 
     public Flux<People> all() {
-        return Flux.empty();
+        return this.repository.findAll();
     }
 }
